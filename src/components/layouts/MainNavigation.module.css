@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #77002e;
+  background-color: #17082e;
   padding: 0 10%;
 }
 
@@ -29,19 +29,36 @@
 .header a {
   text-decoration: none;
   font-size: 1rem;
-  color: #fcb8d2;
+  color: #e6e6e6;
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: white;
+  color: rgb(163, 163, 163);
 }
 
 .badge {
-  background-color: #cc2062;
+  background-color: #29114d;
   color: white;
   border-radius: 12px;
   padding: 0 1rem;
   margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .header {
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+    justify-content: space-between;
+  }
+  .header li {
+    padding: 0.5rem;
+  }
 }
